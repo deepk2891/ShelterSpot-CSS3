@@ -106,3 +106,83 @@ main {
 .pro-card:hover .pro-img img {
   transform: scale(1.1);
 }
+.pro-type {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-color: #00c194;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+}
+.pro-type::before {
+  content: "";
+  width: 3.5rem;
+  height: 2.5rem;
+  top: -2.1rem;
+  left: 1.1rem;
+  background-image: url(../images/listing-label.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.pro-badge {
+  position: absolute;
+  top: 1.9rem;
+  right: 2rem;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+.pro-badge span:nth-child(1) {
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  background-color: #add8e6;
+  font-family: var(--font-roboto);
+}
+.pro-badge span:nth-child(2) {
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  background-color: #17a2b8;
+  font-family: var(--font-roboto);
+}
+.pro-price {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.8rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.pro-price i {
+  padding-right: 0.2rem;
+}
+.pro-action {
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  visibility: hidden;
+  transition: var(--transition03);
+}
+.pro-action a {
+  border: 1px solid black;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 0.1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+.pro-action a i {
+  color: var(--white);
+}
+.pro-action a:hover {
+  background-color: var(--white);
+}
+.pro-action a:hover i {
+  color: var(--primary-dark);
+}
+.pro-card:hover .pro-action {
+  visibility: visible;
+  transform: translateY(-2.5rem);
+  transition: var(--transition03);
+}

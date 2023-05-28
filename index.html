@@ -34,43 +34,127 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="pro-card">
-                  <div class="pro-img">
+                  <div class="pro-img p-relative">
                     <img src="./assets/images/card1.jpg" alt="" />
+                    <div class="pro-type">For sale</div>
+                    <div class="pro-badge">
+                      <span>Popular</span>
+                      <span>Top</span>
+                    </div>
+                    <div class="pro-price f-weight7">
+                      <i class="fa-solid fa-dollar-sign"></i>1000
+                    </div>
+                    <div class="pro-action">
+                      <a href=""><i class="fa-regular fa-heart"></i></a>
+                      <a href=""
+                        ><i class="fa-solid fa-arrow-right-arrow-left"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pro-card">
-                  <div class="pro-img">
+                  <div class="pro-img p-relative">
                     <img src="./assets/images/card2.jpg" alt="" />
+                    <div class="pro-type">For sale</div>
+                    <div class="pro-badge">
+                      <span>Popular</span>
+                      <span>Top</span>
+                    </div>
+                    <div class="pro-price f-weight7">
+                      <i class="fa-solid fa-dollar-sign"></i>1,25,000
+                    </div>
+                    <div class="pro-action">
+                      <a href=""><i class="fa-regular fa-heart"></i></a>
+                      <a href=""
+                        ><i class="fa-solid fa-arrow-right-arrow-left"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pro-card">
-                  <div class="pro-img">
+                  <div class="pro-img p-relative">
                     <img src="./assets/images/card3.jpg" alt="" />
+                    <div class="pro-type">For sale</div>
+                    <div class="pro-badge">
+                      <span>Popular</span>
+                      <span>Top</span>
+                    </div>
+                    <div class="pro-price f-weight7">
+                      <i class="fa-solid fa-dollar-sign"></i>25,000
+                    </div>
+                    <div class="pro-action">
+                      <a href=""><i class="fa-regular fa-heart"></i></a>
+                      <a href=""
+                        ><i class="fa-solid fa-arrow-right-arrow-left"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pro-card">
-                  <div class="pro-img">
+                  <div class="pro-img p-relative">
                     <img src="./assets/images/card4.jpg" alt="" />
+                    <div class="pro-type">For sale</div>
+                    <div class="pro-badge">
+                      <span>Popular</span>
+                      <span>Top</span>
+                    </div>
+                    <div class="pro-price f-weight7">
+                      <i class="fa-solid fa-dollar-sign"></i>12,500
+                    </div>
+                    <div class="pro-action">
+                      <a href=""><i class="fa-regular fa-heart"></i></a>
+                      <a href=""
+                        ><i class="fa-solid fa-arrow-right-arrow-left"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pro-card">
-                  <div class="pro-img">
+                  <div class="pro-img p-relative">
                     <img src="./assets/images/card5.jpg" alt="" />
+                    <div class="pro-type">For sale</div>
+                    <div class="pro-badge">
+                      <span>Popular</span>
+                      <span>Top</span>
+                    </div>
+                    <div class="pro-price f-weight7">
+                      <i class="fa-solid fa-dollar-sign"></i>15,000
+                    </div>
+                    <div class="pro-action">
+                      <a href=""><i class="fa-regular fa-heart"></i></a>
+                      <a href=""
+                        ><i class="fa-solid fa-arrow-right-arrow-left"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="pro-card">
-                  <div class="pro-img">
+                  <div class="pro-img p-relative">
                     <img src="./assets/images/card6.jpg" alt="" />
+                    <div class="pro-type">For sale</div>
+                    <div class="pro-badge">
+                      <span>Popular</span>
+                      <span>Top</span>
+                    </div>
+                    <div class="pro-price f-weight7">
+                      <i class="fa-solid fa-dollar-sign"></i>5,000
+                    </div>
+                    <div class="pro-action">
+                      <a href=""><i class="fa-regular fa-heart"></i></a>
+                      <a href=""
+                        ><i class="fa-solid fa-arrow-right-arrow-left"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -110,7 +194,7 @@
 
       // SWIPER
       var swiper = new Swiper(".pro-slider", {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
@@ -128,16 +212,16 @@
             slidesPerView: 1,
           },
           576: {
-            slidesPerView: 2,
+            slidesPerView: 1,
+            spaceBetween: 10,
           },
           640: {
-            slidesPerView: 3,
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
-          768: {
+          992: {
             slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
+            spaceBetween: 20,
           },
         },
       });
