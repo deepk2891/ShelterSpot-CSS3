@@ -15,7 +15,17 @@
     <link rel="stylesheet" href="assets/css/media.css" />
   </head>
   <body>
+    <!-- LOADER STARTS HERE -->
+    <div class="loader"></div>
+    <!-- LOADER ENDS HERE -->
+    <main></main>
     <script src="assets/js/jquery-3.7.0.min.js"></script>
-    <script></script>
+    <script>
+      // LOADER
+      $(window).on("load", function () {
+        $(".loader").delay(2000).fadeOut();
+        $("main").delay(2000).fadeIn();
+      });
+    </script>
   </body>
 </html>
