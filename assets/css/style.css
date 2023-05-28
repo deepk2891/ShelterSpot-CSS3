@@ -72,7 +72,6 @@ section {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
 }
-
 @keyframes s3 {
   100% {
     transform: rotate(1turn);
@@ -93,7 +92,17 @@ section {
 .scroll-top i {
   color: var(--white);
 }
-
 main {
   display: none;
+}
+.pro-img {
+  overflow: hidden;
+}
+.pro-img img {
+  height: 100%;
+  width: 100%;
+  transition: var(--transition03);
+}
+.pro-card:hover .pro-img img {
+  transform: scale(1.1);
 }

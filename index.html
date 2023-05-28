@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShelterSpot.dk</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- FONT AWESOME ICON CSS -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <!-- custom css -->
@@ -23,7 +27,64 @@
       <div class="top">
         <a href="#" class="scroll-top"><i class="fa-solid fa-angles-up"></i></a>
       </div>
+      <!-- PROPERTIES STARTS HERE -->
+      <section class="properties" id="properties">
+        <div class="container">
+          <div class="swiper pro-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="pro-card">
+                  <div class="pro-img">
+                    <img src="./assets/images/card1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-card">
+                  <div class="pro-img">
+                    <img src="./assets/images/card2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-card">
+                  <div class="pro-img">
+                    <img src="./assets/images/card3.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-card">
+                  <div class="pro-img">
+                    <img src="./assets/images/card4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-card">
+                  <div class="pro-img">
+                    <img src="./assets/images/card5.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-card">
+                  <div class="pro-img">
+                    <img src="./assets/images/card6.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- PROPERTIES ENDS HERE -->
     </main>
+    <!-- SWIPER.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery-3.7.0.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -40,10 +101,25 @@
           return false;
         });
       });
+
       // LOADER
       $(window).on("load", function () {
         $(".loader").delay(2000).fadeOut();
         $("main").delay(2000).fadeIn();
+      });
+
+      // SWIPER
+      var swiper = new Swiper(".pro-slider", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
     </script>
   </body>
