@@ -186,3 +186,51 @@ main {
   transform: translateY(-2.5rem);
   transition: var(--transition03);
 }
+.number {
+  background-color: #0e2e50;
+  background-image: url(../images/counter-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 150px;
+}
+.num-heading {
+  text-align: center;
+  font-family: var(--font-ubuntu);
+  color: var(--white);
+}
+.num-heading span {
+  font-size: 2.5rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 5;
+}
+.num-heading span::before {
+  content: "numbers";
+  position: absolute;
+  top: -3.5rem;
+  left: 3rem;
+  z-index: -10;
+  font-family: var(--font-water);
+  color: rgba(12, 3, 70, 0.5);
+  font-size: 10rem;
+}
+.num-heading p {
+  font-size: 1.3rem;
+  padding-top: 0.7rem;
+  padding-top: 3.5rem;
+}
+.number .counter {
+  text-align: center;
+  padding: 80px 0;
+}
+.number .counter span {
+  font-family: var(--font-roboto);
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.number .counter h4 {
+  font-family: var(--font-ubuntu);
+  font-size: 1rem;
+  color: var(--white);
+}
