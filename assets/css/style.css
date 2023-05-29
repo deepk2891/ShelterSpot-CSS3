@@ -234,3 +234,68 @@ main {
   font-size: 1rem;
   color: var(--white);
 }
+/* AGENT STARTS HERE */
+.agent-heading {
+  font-family: var(--font-roboto);
+  margin: 1rem 0;
+}
+.agent .agent-heading p {
+  color: var(--primary);
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+.agent .agent-heading span {
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+.agent .agent-heading p::before {
+  content: "Our Agents";
+  font-family: var(--font-water);
+  color: var(--primary);
+  opacity: 0.3;
+  font-size: 5rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  top: 0rem;
+  left: calc(50% - 12rem);
+  z-index: -1;
+}
+.agent-card .agent-img {
+  overflow: hidden;
+  border-radius: 200px 200px 200px 0px;
+  -moz-border-radius: 200px 200px 200px 0px;
+  -webkit-border-radius: 200px 200px 200px 0px;
+  border: 0px solid #000000;
+}
+.agent-card .agent-img img {
+  transition: var(--transition03);
+}
+.agent-card:hover .agent-img img {
+  transform: scale(1.1);
+}
+.agent-card .icons #icon1 {
+  display: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  transition: var(--transition03);
+}
+#icon1 i {
+  font-size: 1.2rem;
+}
+.agent-card:hover #icon1 {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 50%;
+  display: block;
+}
+.agent-card .iconall {
+  display: none;
+}
+.agent-card #icon1:hover .iconall {
+  display: block;
+}
+/* AGENT ENDS HERE */
