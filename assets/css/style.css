@@ -262,6 +262,9 @@ main {
   left: calc(50% - 12rem);
   z-index: -1;
 }
+.agent .row {
+  padding-top: 3rem;
+}
 .agent-card .agent-img {
   overflow: hidden;
   border-radius: 200px 200px 200px 0px;
@@ -275,27 +278,73 @@ main {
 .agent-card:hover .agent-img img {
   transform: scale(1.1);
 }
-.agent-card .icons #icon1 {
+.listing {
+  font-family: var(--font-ubuntu);
+  position: absolute;
+  left: 2rem;
+  top: 16rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.2rem;
+  background-color: var(--primary);
+  color: var(--white);
+}
+.listing i {
+  font-size: 0.5rem;
+  margin: 5px;
+}
+.agent-card .icon1 {
   display: none;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
   transition: var(--transition03);
-}
-#icon1 i {
-  font-size: 1.2rem;
-}
-.agent-card:hover #icon1 {
   background-color: var(--primary-dark);
   color: var(--white);
   padding: 1rem;
   border-radius: 50%;
+}
+.icon1 i {
+  font-size: 1.2rem;
+}
+.agent-card:hover .icon1 {
   display: block;
 }
-.agent-card .iconall {
-  display: none;
+.agent-info {
+  font-family: var(--font-ubuntu);
 }
-.agent-card #icon1:hover .iconall {
-  display: block;
+.agent-info .title {
+  padding: 0.8rem 0;
+  font-size: 1.5rem;
+  transition: var(--transition03);
+}
+.agent-info .title:hover {
+  color: var(--primary-dark);
+  transition: var(--transition03);
+}
+.agent-info .sub-title {
+  padding: 0 0 0.8rem 0;
+  color: #788593;
+  font-size: 1rem;
+  transition: var(--transition03);
+}
+.agent-info .sub-title:hover {
+  color: var(--primary-dark);
+}
+.agent-info .desc i {
+  background-color: #dceeea;
+  color: var(--primary-dark);
+  padding: 0.7rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+.agent-info .desc {
+  color: #788593;
+}
+.agent-info .desc a {
+  color: #788593;
+  transition: var(--transition03);
+}
+.agent-info .desc a:hover {
+  color: var(--primary-dark);
 }
 /* AGENT ENDS HERE */

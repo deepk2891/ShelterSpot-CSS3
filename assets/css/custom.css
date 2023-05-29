@@ -114,6 +114,10 @@ img {
   float: left;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* DISPLAY FLEX */
 .d-flex {
   display: flex;
