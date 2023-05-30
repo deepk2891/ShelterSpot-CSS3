@@ -1,0 +1,69 @@
+.main-banner {
+  padding-bottom: 0rem;
+}
+.main-heading h1 {
+  font-family: var(--font-roboto);
+  font-size: 3rem;
+  color: #0e2e50;
+}
+b {
+  color: var(--primary-dark);
+}
+.main-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  padding-left: 0rem;
+}
+.cd-headline {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+/* -------------------------------- 
+xclip 
+-------------------------------- */
+.cd-headline.clip span {
+  display: inline-block;
+  padding: 0.2em 0;
+}
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #aebcb9;
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
