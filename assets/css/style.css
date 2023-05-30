@@ -24,6 +24,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  cursor: none;
 }
 .container {
   max-width: 1320px;
