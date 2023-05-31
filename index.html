@@ -361,45 +361,46 @@
           $("html").animate({ scrollTop: 0 }, 400);
           return false;
         });
-        // LOADER
-        $(window).on("load", function () {
-          $(".loader").delay(2000).fadeOut();
-          $("main").delay(2000).fadeIn();
-        });
+      });
 
-        // SWIPER
-        var swiper = new Swiper(".pro-slider", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+      // LOADER
+      $(window).on("load", function () {
+        $(".loader").delay(2000).fadeOut();
+        $("main").delay(2000).fadeIn();
+      });
+
+      // SWIPER
+      var swiper = new Swiper(".pro-slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          280: {
+            slidesPerView: 1,
           },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+          320: {
+            slidesPerView: 1,
           },
-          breakpoints: {
-            280: {
-              slidesPerView: 1,
-            },
-            320: {
-              slidesPerView: 1,
-            },
-            576: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            992: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 10,
           },
-        });
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
       });
     </script>
   </body>
