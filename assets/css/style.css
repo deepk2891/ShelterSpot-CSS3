@@ -355,3 +355,27 @@ main {
   color: var(--primary-dark);
 }
 /* AGENT ENDS HERE */
+
+/* ACCORDION */
+.accordion {
+}
+.discription {
+  border-bottom: solid rgb(255, 255, 255);
+  color: black;
+  font-family: var(--font-roboto);
+  margin: 1rem;
+  background-color: #eaf7f4;
+}
+.d-title {
+  padding: 1rem;
+}
+.d-title i {
+  margin-top: 3px;
+  padding-right: 1rem;
+}
+.d-desc {
+  color: black;
+  padding: 1rem;
+  line-height: 1.5rem;
+  display: none;
+}
